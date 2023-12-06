@@ -1,5 +1,6 @@
 import express from 'express';
 import { router } from './routes'; // Importa o objeto 'router' do arquivo de rotas index.js (endpoints)
+import 'dotenv/config';
 
 const server = express(); // Cria instancia do express pra configurar o servidor
 
