@@ -5,14 +5,14 @@ interface ICidade{
 }
 
 // Controller
-// Body tipado
+// Body COM parametros de tipagem
 export const create = (req: Request<{}, {}, ICidade>, res: Response) => {
 
     console.log(req.body.nome);
 
     return res.send('Create!');
 };
-// Body nao tipado
+// Body SEM parametros de tipagem
 // export const create = (req:Request, res:Response) => {
 
 //     const data: ICidade = req.body; // pegando o JSON enviado
